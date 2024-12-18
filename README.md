@@ -63,3 +63,9 @@ The system provides basic CRUD (Create, Read, Update, Delete) functionalities fo
 ## Usage
 
 Once the program is running, you will be presented with a menu to choose between managing students, staff, or courses. Follow the prompts to perform the desired operations.
+
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=39FF14&center=true&width=435&lines=Thank+You+For+Checking+!">
+</p>
