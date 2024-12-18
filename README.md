@@ -1,6 +1,7 @@
 # Basic School Management System
+- Mentor : Mr. Jeet Kumar
 
-A simple School Management System implemented in Python. This system allows for the management of Students, Staffs, and Courses using a command-line interface (CLI) and stores data in an Excel file.
+   A simple School Management System implemented in Python. This system allows for the management of Students, Staffs, and Courses using a command-line interface (CLI) and stores data in an Excel file.
 
 ## Features
 
@@ -26,6 +27,14 @@ The system provides basic CRUD (Create, Read, Update, Delete) functionalities fo
    - Search for a course by ID
    - Update course details by ID
    - Delete a course by ID
+  
+## Screenshots
+
+### CLI Interface
+![CLI Interface](SMS.jpg)
+
+### Excel File
+![Excel File](SMSexcel.jpg)
 
 ## Technologies Used
 
@@ -50,14 +59,6 @@ The system provides basic CRUD (Create, Read, Update, Delete) functionalities fo
    ```bash
    python sms.py
    ```
-
-## Screenshots
-
-### CLI Interface
-![CLI Interface](screenshots/cli_interface.png)
-
-### Excel File
-![Excel File](screenshots/excel_file.png)
 
 ## Usage
 
