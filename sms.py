@@ -14,7 +14,7 @@ class StudentManagementSystem:
         self.courses = []
         self.load_from_excel()
 
-    # Load data from Excel
+    # Loading data from Excel
     def load_from_excel(self):
         if not os.path.exists(database):
             wb = Workbook()
@@ -34,10 +34,10 @@ class StudentManagementSystem:
         if "Courses" not in wb.sheetnames:
             wb.create_sheet(title="Courses")
     
-        wb.save(database)  # Save changes to workbook
+        wb.save(database)  
         wb.close()
 
-        # Reload the workbook to access sheets
+        # Reloading the workbook to access sheets
         wb = load_workbook(database)
         self.load_students(wb['Students'])
         self.load_staff(wb['Staff'])
@@ -77,7 +77,7 @@ class StudentManagementSystem:
             }
             self.courses.append(course)
 
-    # Save data to Excel
+    # Saving data to Excel
     def save_to_excel(self):
         wb = Workbook()
         self.save_students(wb.create_sheet(title="Students"))
@@ -122,7 +122,7 @@ class StudentManagementSystem:
                 course['assigned_staff']
             ])
 
-    # Generate unique IDs and enrollment numbers
+    # Generating unique ID, enrollment number, Staff ID and Course ID
     def generate_unique_student_id(self):
         while True:
             student_id = random.randint(1000, 9999)
@@ -147,7 +147,7 @@ class StudentManagementSystem:
             if not any(course['id'] == course_id for course in self.courses):
                 return course_id
 
-    # Validate email and phone
+    # Email and phone validation constraints  
     def validate_email(self, email):
         return '@' in email and '.' in email and not any(
             student['email'] == email for student in self.students
@@ -373,7 +373,6 @@ class StudentManagementSystem:
         print(f"Email: {staff['email']}")
         print(f"Phone: {staff['phone']}")
         print(f"Course: {staff['course']}")
-
 
 
     def display_all_staffs(self):
