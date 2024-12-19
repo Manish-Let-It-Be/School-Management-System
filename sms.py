@@ -235,8 +235,8 @@ class StudentManagementSystem:
             print("No students found!")
             return
         
-        headers = ['ID', 'Enrollment', 'Name', 'Email', 'Phone', 'Course']
-        data = [[s['id'], s['enrollment'], s['name'], s['email'], s['phone'], s['course']] 
+        headers = ['ID', 'Enrollment', 'Name', 'Email', 'Phone', 'Address', 'Course']
+        data = [[s['id'], s['enrollment'], s['name'], s['email'], s['phone'], s['address'], s['course']] 
                 for s in self.students]
         print(tabulate(data, headers=headers, tablefmt='grid'))
 
