@@ -6,6 +6,7 @@ from openpyxl import Workbook, load_workbook
 
 database = "school_management.xlsx"
 
+
 class StudentManagementSystem:
     def __init__(self):
         self.students = []
