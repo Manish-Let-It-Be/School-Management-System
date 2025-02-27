@@ -1,5 +1,5 @@
 # Basic School Management System
-- Mentor : Mr. Jeet Kumar
+- Mentor : [Mr. Jeet Kumar](https://github.com/jeetjha11)
 
    A simple School Management System implemented in Python. This system allows for the management of Students, Staffs, and Courses using a command-line interface (CLI) and stores data in an Excel file.
 
